@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>survey-form.freecodecamp.rocks</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+
+      <div class="main">
+        <div id="survey-form">
+          <fieldset>
+            <label id="name-label" for="name"
+              >Name
+              <input
+                placeholder="Enter Your Name"
+                id="name"
+                name="name"
+                type="text"
+                required
+            /></label>
+
+            <label id="email-label" for="email"
+              >Email
+              <input
+                placeholder="Enter Your Email"
+                id="email"
+                name="email"
+                type="email"
+                required
+            /></label>
+
+            <label id="number-label" for="number"
+              >Age (optional)
+              <input
+                placeholder="Age"
+                id="number"
+                type="number"
+                name="number"
+                min="13"
+                max="120"
+            /></label>
+
+            <label for="role"
+              >Which option best describes your current role?
+              <select id="dropdown" name="dropdown">
+                <option value="">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full time job</option>
+                <option value="3">Full time learner</option>
+                <option value="4">Prefer not to say</option>
+                <option value="5">Other</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+            <label for="definitely-account"
+              ><input
+                id="definitely-account"
+                type="radio"
+                name="recommend"
+                class="inline"
+                checked
+                value="Definitely"
+              />
+              Definitely</label
+            >
+            <label for="maybe-account"
+              ><input
+                id="maybe-account"
+                type="radio"
+                name="recommend"
+                class="inline"
+                value="Maybe"
+              />
+              Maybe</label
+            >
+            <label for="notsure-account"
+              ><input
+                id="notsure-account"
+                type="radio"
+                name="recommend"
+                class="inline"
+                value="Notsure"
+              />
+              Not sure</label
+            >
+
+            <label for="role"
+              >What is your favorite feature of freeCodeCamp?
+              <select id="role" name="role">
+                <option value="">Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects job</option>
+                <option value="3">Community</option>
+                <option value="4">Open source</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <div class="condense">
+              <label for="Front-endProjects">
+                <input
+                  class="inline"
+                  id="Front-endProjects"
+                  type="checkbox"
+                  required
+                  name="Front-endProjects"
+                  value="Front-endProjects"
+                />
+                Front-end Projects
+              </label>
+
+              <label for="Back-endProjects">
+                <input
+                  class="inline"
+                  id="Back-endProjects"
+                  type="checkbox"
+                  required
+                  name="Back-endProjects"
+                  value="Back-endProjects"
+                />
+                Back-end Projects
+              </label>
+
+              <label for="Data">
+                <input
+                  class="inline"
+                  id="Data"
+                  type="checkbox"
+                  required
+                  name="Data"
+                  value="Data"
+                />
+                Data Visualization
+              </label>
+
+              <label for="Challenges">
+                <input
+                  class="inline"
+                  id="Challenges"
+                  type="checkbox"
+                  required
+                  name="Challenges"
+                  value="Challenges"
+                />
+                Challenges
+              </label>
+
+              <label for="Open">
+                <input
+                  class="inline"
+                  id="Open"
+                  type="checkbox"
+                  required
+                  name="Open"
+                  value="Open"
+                />
+                Open Source Community
+              </label>
+
+              <label for="Gitter">
+                <input
+                  class="inline"
+                  id="Gitter"
+                  type="checkbox"
+                  required
+                  name="Gitter"
+                  value="Gitter"
+                />
+                Gitter help rooms
+              </label>
+
+              <label for="Videos">
+                <input
+                  class="inline"
+                  id="Videos"
+                  type="checkbox"
+                  required
+                  name="Videos"
+                  value="Videos"
+                />
+                Videos
+              </label>
+
+              <label for="City">
+                <input
+                  class="inline"
+                  id="City"
+                  type="checkbox"
+                  required
+                  name="City"
+                  value="City"
+                />
+                City Meetups
+              </label>
+
+              <label for="Wiki">
+                <input
+                  class="inline"
+                  id="Wiki"
+                  type="checkbox"
+                  required
+                  name="Wiki"
+                  value="Wiki"
+                />
+                Wiki
+              </label>
+
+              <label for="Forum">
+                <input
+                  class="inline"
+                  id="Forum"
+                  type="checkbox"
+                  required
+                  name="Forum"
+                  value="Forum"
+                />
+                Forum
+              </label>
+
+              <label for="Additional">
+                <input
+                  class="inline"
+                  id="Additional"
+                  type="checkbox"
+                  required
+                  name="Additional"
+                  value="Additional"
+                />
+                Additional Courses
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label for="suggestions"
+              >Any comments or suggestions?
+              <textarea
+                id="suggestions"
+                name="suggestions"
+                rows="6"
+                cols="30"
+                placeholder="Enter your comment here..."
+              ></textarea>
+            </label>
+          </fieldset>
+
+          <input id="submit" type="submit" value="Submit" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
